@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Register - Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <video autoplay muted loop id="bg-video">
+    <source src="background.mp4" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+
+  <!-- Removed navbar from register page -->
+
+  <main class="form-container glassmorphism canvas-effect">
+    <h1>Register</h1>
+    <form id="registerForm" action="register.php" method="POST">
+      <label for="registerName">Name</label>
+      <input type="text" id="registerName" name="name" required />
+
+      <label for="registerEmail">Email</label>
+      <input type="email" id="registerEmail" name="email" required />
+
+      <label for="registerPassword">Password</label>
+      <input type="password" id="registerPassword" name="password" required />
+
+      <label for="registerMobile">Mobile Number</label>
+      <input type="tel" id="registerMobile" name="mobile" pattern=\"\\d{10}\" placeholder=\"Enter 10-digit mobile number\" required />
+
+      <button type="submit" class="btn-primary">Register</button>
+    </form>
+    <p>Already have an account? <a href="login.html">Login here</a></p>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

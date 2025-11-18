@@ -1,0 +1,3 @@
+- [x] Revert login.html to use background video
+- [x] Revert register.html to use background video
+- [x] Revert styles.css to apply background styles to video element

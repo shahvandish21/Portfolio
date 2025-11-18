@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portfolio - Vandish Shah</title>
+  <meta name="description" content="Portfolio of Vandish Shah, a passionate web developer specializing in HTML, CSS, JavaScript, and React. Explore my skills, projects, and get in touch." />
+  <meta name="keywords" content="web developer, portfolio, HTML, CSS, JavaScript, React, Node.js, Vandish Shah" />
+  <meta name="author" content="Vandish Shah" />
+  <meta name="robots" content="index, follow" />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://vandishshah.github.io/portfolio/" />
+  <meta property="og:title" content="Portfolio - Vandish Shah" />
+  <meta property="og:description" content="Portfolio of Vandish Shah, a passionate web developer specializing in HTML, CSS, JavaScript, and React." />
+  <meta property="og:image" content="vandish.jpg" />
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:url" content="https://vandishshah.github.io/portfolio/" />
+  <meta property="twitter:title" content="Portfolio - Vandish Shah" />
+  <meta property="twitter:description" content="Portfolio of Vandish Shah, a passionate web developer specializing in HTML, CSS, JavaScript, and React." />
+  <meta property="twitter:image" content="vandish.jpg" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  <script src="script.js"></script>
+</head>
+<body>
+  <canvas id="particles-canvas"></canvas>
+  <nav class="navbar">
+    <ul class="nav-links">
+      <li><a href="#" class="active tooltip"><i class="fas fa-home"></i> Home<span class="tooltip-text">Go to top</span></a></li>
+      <li><a href="#about" class="tooltip"><i class="fas fa-user"></i> About<span class="tooltip-text">Learn about me</span></a></li>
+      <li><a href="#skills" class="tooltip"><i class="fas fa-code"></i> Skills<span class="tooltip-text">My expertise</span></a></li>
+      <li><a href="#contact" class="tooltip"><i class="fas fa-envelope"></i> Contact Us<span class="tooltip-text">Get in touch</span></a></li>
+    </ul>
+    <ul class="social-icons">
+      <li><a href="#" title="LinkedIn" class="tooltip"><i class="fab fa-linkedin"></i><span class="tooltip-text">LinkedIn</span></a></li>
+      <li><a href="#" title="GitHub" class="tooltip"><i class="fab fa-github"></i><span class="tooltip-text">GitHub</span></a></li>
+      <li><a href="#" title="Instagram" class="tooltip"><i class="fab fa-instagram"></i><span class="tooltip-text">Instagram</span></a></li>
+    </ul>
+  </nav>
+
+  <main class="hero-section fade-in">
+    <div class="intro-text">
+      <h1>Vandish Shah</h1>
+      <p id="typing-text">Intro text: Hello! My Name Is Shah Vandish I Have Successfully Completed My Diploma In Computer Engineering At C U Shah Polytechnic Surendranagar And Now I Have Started My Further BTECH Degree In CSE At JG University Ahmedabad</p>
+    </div>
+    <div class="profile-pic-container">
+      <img src="vandish.jpg" alt="Profile Picture" class="profile-pic" />
+    </div>
+  </main>
+
+  <section id="about" class="about-section fade-in">
+    <h1>About Me</h1>
+    <section class="about-content centered-text">
+      <p>
+        Hello! I am Vandish Shah, a passionate web developer with a strong foundation in computer engineering. I have successfully completed my Diploma in Computer Engineering from C U Shah Polytechnic Surendranagar and am currently pursuing my B.Tech in Computer Science and Engineering at JG University Ahmedabad. I specialize in creating dynamic and responsive web applications using modern technologies like HTML, CSS, JavaScript, and React.
+      </p>
+    </section>
+  </section>
+
+  <section id="skills" class="skills-section fade-in">
+    <h1>My Skills</h1>
+    <section class="skills-content">
+      <ul class="skills-list">
+        <li>
+          <strong><i class="fab fa-html5"></i> HTML5 & CSS3</strong>
+          <div class="skill-bar">
+            <div class="skill-level" style="width: 90%;"></div>
+          </div>
+        </li>
+        <li>
+          <strong><i class="fab fa-js-square"></i> JavaScript (ES6+)</strong>
+          <div class="skill-bar">
+            <div class="skill-level" style="width: 85%;"></div>
+          </div>
+        </li>
+        <li>
+          <strong><i class="fab fa-react"></i> React.js</strong>
+          <div class="skill-bar">
+            <div class="skill-level" style="width: 80%;"></div>
+          </div>
+        </li>
+        <li>
+          <strong><i class="fab fa-node-js"></i> Node.js & Express</strong>
+          <div class="skill-bar">
+            <div class="skill-level" style="width: 75%;"></div>
+          </div>
+        </li>
+        <li>
+          <strong><i class="fas fa-mobile-alt"></i> Responsive Web Design</strong>
+          <div class="skill-bar">
+            <div class="skill-level" style="width: 90%;"></div>
+          </div>
+        </li>
+        <li>
+          <strong><i class="fab fa-git-alt"></i> Version Control (Git)</strong>
+          <div class="skill-bar">
+            <div class="skill-level" style="width: 85%;"></div>
+          </div>
+        </li>
+        <li>
+          <strong><i class="fas fa-paint-brush"></i> UI/UX Design Principles</strong>
+          <div class="skill-bar">
+            <div class="skill-level" style="width: 70%;"></div>
+          </div>
+        </li>
+      </ul>
+    </section>
+  </section>
+
+  <section id="contact" class="contact-section fade-in">
+    <h1>Contact Me</h1>
+    <form id="contactForm" class="contact-form">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" required />
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+
+      <button type="submit" class="btn-primary">Send Message</button>
+    </form>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>Vandish Shah</h3>
+        <p>Passionate web developer creating stylish and dynamic web applications.</p>
+      </div>
+      <div class="footer-section">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Contact Info</h3>
+        <p>Email: shahvandish21@gmail.com</p>
+        <p>Phone: +91 9016249498</p>
+      </div>
+      <div class="footer-section">
+        <h3>Follow Me</h3>
+        <div class="social-links">
+          <a href="#" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+          <a href="#" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+          <a href="#" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2023 Vandish Shah. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
